@@ -47,11 +47,15 @@ public class AdicionaNome extends HttpServlet {
     throws IOException, ServletException {
     		String nome = request.getParameter("nome"); 
     		String email = request.getParameter("e-mail");
+    		String curso = request.getParameter("curso");
     		PrintWriter out = response.getWriter();
     		out.println("<html>"); 
     		out.println("<body>"); 
-    		out.println("Nome: " + nome ); 
-    		out.println("E-mail: "+ email);
+    		out.println("Inscrição confirmada");
+    		out.println("<br /> Dados inseridos:<br />");
+    		out.println("<br />Nome: " + nome ); 
+    		out.println("<br />	E-mail: "+ email);
+    		out.println("<br />Curso: " + curso);
     		out.println("</body>"); 
     		out.println("</html>");
     } 
