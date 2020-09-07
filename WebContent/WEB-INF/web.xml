@@ -18,4 +18,12 @@
 	<servlet-name>primeiraServlet</servlet-name> 
 	<url-pattern>/oi</url-pattern>
 </servlet-mapping>
+<servlet> 
+	<servlet-name>AdicionaNomeServlet</servlet-name>
+	<servlet-class>br.edu.insper.AdicionaNome</servlet-class> 
+</servlet>
+<servlet-mapping> 
+	<servlet-name>AdicionaNomeServlet</servlet-name> 
+	<url-pattern>/formulario</url-pattern>
+</servlet-mapping>
 </web-app>
